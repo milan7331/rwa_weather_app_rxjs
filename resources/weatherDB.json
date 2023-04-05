@@ -1,0 +1,125 @@
+{
+    "weather": [
+      {
+        "id": 1,
+        "city": "New York",
+        "temperature": 286.5,
+        "description": "scattered clouds"
+      },
+      {
+        "id": 2,
+        "city": "Los Angeles",
+        "temperature": 294.8,
+        "description": "clear sky"
+      },
+      {
+        "id": 3,
+        "city": "Chicago",
+        "temperature": 281.7,
+        "description": "few clouds"
+      },
+      {
+        "id": 4,
+        "city": "Houston",
+        "temperature": 294.2,
+        "description": "scattered clouds"
+      },
+      {
+        "id": 5,
+        "city": "Phoenix",
+        "temperature": 300.6,
+        "description": "clear sky"
+      },
+      {
+        "id": 6,
+        "city": "Philadelphia",
+        "temperature": 285.2,
+        "description": "overcast clouds"
+      },
+      {
+        "id": 7,
+        "city": "San Antonio",
+        "temperature": 292.1,
+        "description": "scattered clouds"
+      },
+      {
+        "id": 8,
+        "city": "San Diego",
+        "temperature": 293.4,
+        "description": "clear sky"
+      },
+      {
+        "id": 9,
+        "city": "Dallas",
+        "temperature": 290.3,
+        "description": "broken clouds"
+      },
+      {
+        "id": 10,
+        "city": "San Jose",
+        "temperature": 287.5,
+        "description": "scattered clouds"
+      },
+      {
+        "id": 11,
+        "city": "London",
+        "temperature": 279.3,
+        "description": "light rain"
+      },
+      {
+        "id": 12,
+        "city": "Paris",
+        "temperature": 280.2,
+        "description": "moderate rain"
+      },
+      {
+        "id": 13,
+        "city": "Tokyo",
+        "temperature": 288.9,
+        "description": "light intensity shower rain"
+      },
+      {
+        "id": 14,
+        "city": "Sydney",
+        "temperature": 292.5,
+        "description": "heavy intensity rain"
+      },
+      {
+        "id": 15,
+        "city": "Mumbai",
+        "temperature": 303.1,
+        "description": "light rain"
+      },
+      {
+        "id": 16,
+        "city": "Dubai",
+        "temperature": 314.0,
+        "description": "dust"
+      },
+      {
+        "id": 17,
+        "city": "Sao Paulo",
+        "temperature": 290.8,
+        "description": "scattered thunderstorms"
+      },
+      {
+        "id": 18,
+        "city": "Singapore",
+        "temperature": 302.6,
+        "description": "thunderstorm"
+      },
+      {
+        "id": 19,
+        "city": "Seoul",
+        "temperature": 283.7,
+        "description": "heavy snow"
+      },
+      {
+        "id": 20,
+        "city": "Moscow",
+        "temperature": 274.3,
+        "description": "light snow"
+      }
+    ]
+  }
+  
