@@ -1,8 +1,10 @@
 export interface ILocation {
-    locationX: number,
-    locationY: number
+    latitude: number,
+    longitude: number
 }
 
 export interface ICity extends ILocation {
-    CityName: string
+    name: string,
+    country: string,
+    state?: string
 }
