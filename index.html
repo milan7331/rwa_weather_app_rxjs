@@ -5,18 +5,19 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="mainDiv">
-      deli se na levi i desni div
-      levi sadrzi search polje koje nema dugme vec radi reaktivno i vraca da kazemo kartice sa ponuđenim gradovima i koordinatama
-      nakon odabira grada
-      dodaje se u desnu stranu sa karticama o mestima o kojima pratimo temp
-      kartice se apdejtuju u zavisnosti od količine dakle može max 60 u minuti za free tier
-      možda dodati prioritete koji krše pravila za apdejtovanje idk
-      moguće je odabrati neki od gradova da se prikazuje nedeljno vreme u donjem divu dakle ne samo trenutno
-      i moguće je obrisati neku karticu / grad
+    <div id="mainDiv">
+      <div id="leftDiv">
+        <input id="citySearchInput" type="text">
+        <div id="searchResults">
+          
+        </div>
+      </div>
+      <div id="rightDiv">
+
+      </div>
     </div>
-    <div class="weeklyWeatherDiv">
-      oovde će da se prikazuje selektovani grad za nedeljno vreme
+    <div id="weeklyWeatherDiv">
+
     </div>
     <script src="./dist/bundle.js"></script>
   </body>
