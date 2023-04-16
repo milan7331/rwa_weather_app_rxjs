@@ -1,7 +1,4 @@
-export interface ILocation {
-    latitude: number,
-    longitude: number
-}
+import { ILocation } from "./ILocation"
 
 export interface ICity extends ILocation {
     name: string,

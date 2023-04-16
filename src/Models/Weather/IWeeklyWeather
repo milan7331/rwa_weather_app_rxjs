@@ -1,0 +1,5 @@
+import { IWeather } from "./IWeather";
+
+export interface IWeeklyWeather extends IWeather {
+
+};

@@ -1,5 +1,5 @@
-import { ICity } from "../model/ILocation";
-import { LocationService } from "../service/locationService";
+import { ICity } from "../Models/Location/ILocation";
+import { LocationService } from "../Services/LocationService/locationService";
 import { fromEvent, debounceTime, map, filter, switchMap } from "rxjs";
 
 class LocationLogic {

@@ -1,0 +1,5 @@
+import { IWeather } from "./IWeather"
+
+export interface ICurrentWeather extends IWeather {
+
+};
