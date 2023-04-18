@@ -1,10 +1,10 @@
 import { Observable, from } from "rxjs";
-import { ICity } from "../../Models/Location/ICity";
+import { City } from "../../Models/Location/City";
 import { ILocationService } from "./ILocationService";
 
 export class LocationService implements ILocationService {
-
-    GetCities(url: string, api_key: string, query: string): Observable<ICity[]> {
+    
+    static GetCities(url: string, api_key: string, query: string): Observable<City[]> {
         const promise = fetch(`${url} + ?${query}&limit=5&appid=${api_key}`)
             .then(response => {
                 if(!response.ok) {

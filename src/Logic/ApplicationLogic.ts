@@ -1,17 +1,36 @@
-import { ICity } from "../Models/Location/ILocation";
-import { LocationService } from "../Services/LocationService/locationService";
+import { City } from "../Models/Location/City";
+
+import { ILocationService } from "../Services/LocationService/ILocationService";
+import { LocationService } from "../Services/LocationService/LocationService";
+import { IWeatherService } from "../Services/WeatherService/IWeatherService";
+import { WeatherService } from "../Services/WeatherService/WeatherService";
+
 import { fromEvent, debounceTime, map, filter, switchMap } from "rxjs";
 
-class LocationLogic {
+export class ApplicationLogic {
 
-    url: string;
+    currentWeatherURL: string;
+    weeklyForecastURL: string;
+    geolocationURL: string;
     api_key: string;
-    queryResults: ICity[];
+    
+    locationService: ILocationService;
+    weatherService: IWeatherService;
 
-    constructor(url: string, api_key: string) {
-        this.url = url;
+    locationQueryResults: City[];
+
+    constructor(currentWeather: string, weeklyForecast: string, geolocation: string, api_key: string) {
+
+        this.currentWeatherURL = currentWeather;
+        this.weeklyForecastURL = weeklyForecast;
+        this.geolocationURL = geolocation;
         this.api_key = api_key;
 
+        this.locationService = new LocationService();
+        this.weatherService = new WeatherService();
+
+        // metode koje se startuju automatski
+        // treba servise napraviti i da se inicijalizuju ljudski!
         this.findLocation();
         this.listOptions();
     }
@@ -24,7 +43,7 @@ class LocationLogic {
             map((ev: InputEvent) => (<HTMLInputElement>ev.target).value),
             filter((txt: string) => txt.length >= 3),
             switchMap(query => LocationService.GetCities(this.url, this.api_key, query))
-        ).subscribe(results => this.queryResults = results);
+        ).subscribe(results => this.locationQueryResults = results);
     }
 
     listOptions() {
